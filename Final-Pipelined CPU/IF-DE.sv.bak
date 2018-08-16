@@ -1,0 +1,53 @@
+module IF-DE (clk, reset, in, out);
+
+	output logic [31:0] out;
+	input logic [31:0] in;
+	input logic clk, reset;
+
+	always_ff @(posedge clk) begin
+		if (reset)
+			out <= 0;
+		else
+			out <= in;
+	end
+
+endmodule 
+
+
+module DE-EX(clk, reset, regout1, regout2, regname1, regname2, out1, out2, out3, out4);
+
+	output logic [63:0] out1, out2;
+	output logic [4:0] out3, out4;
+	input logic clk, reset;
+	input logic [63:0] regout1 regout2;
+	input logic [4:0] regname1, regname2;
+	
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			out1 <= 0;
+			out2 <= 0;
+			out3 <= 0;
+			out4 <= 0;
+		end
+		else begin
+			out1 <= regout1;
+			out2 <= regout2;
+			out3 <= regname1;
+			out4 <= regname2;
+		end
+	end
+
+//two 64-bit register file outputs
+//two 5-bit register names?
+//all control logic
+
+endmodule 
+
+
+module EX-MEM();
+
+
+//ALU stage '
+//all control logic except that used by EX stage
+
+endmodule 

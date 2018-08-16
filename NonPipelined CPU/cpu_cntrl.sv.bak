@@ -1,0 +1,27 @@
+module cpu_cntrl (inst, RegWrite, Reg2Loc, ALUcntrl, ALUsrc, SetFlags, MemWrite
+						MemRead, MemtoReg, UnCondBr, Branch);
+	output logic RegWrite, Reg2Loc, ALUsrc, SetFlags, MemWrite, MemRead, 
+						MemtoReg, UncondBr, Branch;
+	output logic [2:0] ALUcntrl;
+	input logic inst [31:21];
+	
+	always @(inst) begin
+		casez (inst)
+			11'b//ADDI
+			//ADDS
+			//SUBS
+			//MUL
+			//LSL
+			//LSR
+			//B
+			//CBZ
+			//B.LT
+			//LDUR
+			//STUR
+			
+			
+		endcase
+	end
+	
+	
+endmodule 

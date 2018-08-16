@@ -1,0 +1,31 @@
+module forwarding (EXMEMregwrite, MEMWBregwrite, IDEXrm, IDEXrn, EXMEMrd, MEMWBrd, ForwardA, ForwardB);
+
+	output logic [1:0] ForwardA, ForwardB = 2'b0;
+	input logic [4:0] IDEXrm, IDEXrn, EXMEMrd, MEMWBrd;
+	input logic MEMWBregwrite, EXMEMregwrite;
+	
+	always begin
+		//compare EX/MEM pipeline Rd with ID/EX pipeline Rn first
+		if (EXMEMregwrite && (EXMEMrd != 5'd31) && (EXMEMrd == IDEXrn)) begin
+		
+		end
+		
+		//otherwise, compare MEM/WB pipeline Rd with ID/EX pipeline Rn first
+		else if (MEMWBregwrite && (MEMWBrd != 5'd31) && (MEMWBrd == IDEXrn)) begin
+		
+		end
+		
+		//compare EX/MEM pipeline Rd with ID/EX pipeline Rm 
+		if (EXMEMregwrite && (EXMEMrd != 5'd31) && (EXMEMrd == IDEXrm)) begin
+		
+		end
+		
+		//otherwise, compare MEM/WB pipeline Rd with ID/EX pipeline Rm
+		else if (MEMWBregwrite && (MEMWBrd != 5'd31) && (MEMWBrd == IDEXrm)) begin
+		
+		end
+		
+		
+	end
+
+endmodule 

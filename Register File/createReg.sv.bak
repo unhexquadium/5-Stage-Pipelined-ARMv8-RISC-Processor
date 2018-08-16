@@ -1,0 +1,14 @@
+module createreg (register, q, d, reset, clk)
+
+	output logic [63:0] [31:0] register;
+	input logic [63:0] d;
+	input logic reset, clk;
+	
+	genvar i;
+	
+	generate
+		for(i=0; i<32; i++) begin : eachDff
+			D_FF64 dff (register[63:0][i],d[i],reset,clk);
+		end
+	endgenerate
+endmodule

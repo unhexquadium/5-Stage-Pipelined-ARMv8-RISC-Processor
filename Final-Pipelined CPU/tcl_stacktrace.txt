@@ -1,0 +1,13 @@
+Wed Feb 28 18:12:26 PST 2018
+Trace back: invalid command name ".main_pane.cs.512.pw"
+    while executing
+"$w cget -opaqueresize"
+    (procedure "::tk::panedwindow::ReleaseSash" line 2)
+    invoked from within
+"::tk::panedwindow::ReleaseSash $w $opaque"
+    (procedure "::tk::panedwindow::2DReleaseSash" line 8)
+    invoked from within
+"::tk::panedwindow::2DReleaseSash .main_pane.wave.interior.cs.body.pw 1685 647 2565 784 0"
+    (command bound to event)
+  <2:E:/Engr/quartus/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.cs.512.pw"}
+  <1:proc:38: ::tk::dialog::error::bgerror {invalid command name ".main_pane.cs.512.pw"}

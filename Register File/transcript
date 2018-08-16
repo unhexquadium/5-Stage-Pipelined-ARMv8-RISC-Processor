@@ -1,0 +1,496 @@
+# Reading E:/Engr/quartus/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:32 on Jan 22,2018
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 14:44:32 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:32 on Jan 22,2018
+# vlog -reportprogress 300 ./createReg.sv 
+# -- Compiling module createReg
+# 
+# Top level modules:
+# 	createReg
+# End time: 14:44:32 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:32 on Jan 22,2018
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# -- Compiling module D_FF_Enabler
+# -- Compiling module D_FF64
+# 
+# Top level modules:
+# 	D_FF64
+# End time: 14:44:32 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:32 on Jan 22,2018
+# vlog -reportprogress 300 ./mux2_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux16_1
+# -- Compiling module mux32_1
+# 
+# Top level modules:
+# 	mux32_1
+# End time: 14:44:32 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:32 on Jan 22,2018
+# vlog -reportprogress 300 ./giantMux.sv 
+# -- Compiling module giantMux
+# 
+# Top level modules:
+# 	giantMux
+# End time: 14:44:32 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:32 on Jan 22,2018
+# vlog -reportprogress 300 ./decoder5_32.sv 
+# -- Compiling module decoder3_8
+# -- Compiling module decoder2_4
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# End time: 14:44:32 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 14:44:33 on Jan 22,2018
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder2_4
+# Loading work.decoder3_8
+# Loading work.createReg
+# Loading work.D_FF64
+# Loading work.giantMux
+# Loading work.D_FF_Enabler
+# Loading work.mux2_1
+# Loading work.D_FF
+# Loading work.mux32_1
+# Loading work.mux16_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# ** Warning: (vsim-3015) ./createReg.sv(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'reset'. The port definition is at: ./D_FF.sv(35).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/regs/zeroes File: ./D_FF.sv
+# ** Warning: Design size of 12075 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# 7500.00 ns Writing pattern to all registers.
+# 317500.00 ns Checking pattern.
+# ** Note: $stop    : ./regfile.sv(98)
+#    Time: 477500 ns  Iteration: 1  Instance: /regstim
+# Break in Module regstim at ./regfile.sv line 98
+# WARNING: No extended dataflow license exists
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:56:21 on Jan 22,2018
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 14:56:21 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:56:21 on Jan 22,2018
+# vlog -reportprogress 300 ./createReg.sv 
+# -- Compiling module createReg
+# 
+# Top level modules:
+# 	createReg
+# End time: 14:56:21 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:56:21 on Jan 22,2018
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# -- Compiling module D_FF_Enabler
+# -- Compiling module D_FF64
+# 
+# Top level modules:
+# 	D_FF64
+# End time: 14:56:21 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:56:21 on Jan 22,2018
+# vlog -reportprogress 300 ./mux2_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux16_1
+# -- Compiling module mux32_1
+# 
+# Top level modules:
+# 	mux32_1
+# End time: 14:56:21 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:56:21 on Jan 22,2018
+# vlog -reportprogress 300 ./giantMux.sv 
+# -- Compiling module giantMux
+# 
+# Top level modules:
+# 	giantMux
+# End time: 14:56:21 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:56:21 on Jan 22,2018
+# vlog -reportprogress 300 ./decoder5_32.sv 
+# -- Compiling module decoder3_8
+# -- Compiling module decoder2_4
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# End time: 14:56:21 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:56:24 on Jan 22,2018, Elapsed time: 0:11:51
+# Errors: 0, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 14:56:25 on Jan 22,2018
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder2_4
+# Loading work.decoder3_8
+# Loading work.createReg
+# Loading work.D_FF64
+# Loading work.giantMux
+# Loading work.D_FF_Enabler
+# Loading work.mux2_1
+# Loading work.D_FF
+# Loading work.mux32_1
+# Loading work.mux16_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# ** Warning: (vsim-3015) ./createReg.sv(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'reset'. The port definition is at: ./D_FF.sv(35).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/regs/zeroes File: ./D_FF.sv
+# ** Warning: Design size of 12075 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# 7500.00 ns Writing pattern to all registers.
+# 317500.00 ns Checking pattern.
+# ** Note: $stop    : ./regfile.sv(98)
+#    Time: 477500 ns  Iteration: 1  Instance: /regstim
+# Break in Module regstim at ./regfile.sv line 98
+# WARNING: No extended dataflow license exists
+ do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:08:48 on Jan 22,2018
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 15:08:48 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:08:48 on Jan 22,2018
+# vlog -reportprogress 300 ./createReg.sv 
+# -- Compiling module createReg
+# 
+# Top level modules:
+# 	createReg
+# End time: 15:08:48 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:08:48 on Jan 22,2018
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# -- Compiling module D_FF_Enabler
+# -- Compiling module D_FF64
+# 
+# Top level modules:
+# 	D_FF64
+# End time: 15:08:48 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:08:48 on Jan 22,2018
+# vlog -reportprogress 300 ./mux2_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux16_1
+# -- Compiling module mux32_1
+# 
+# Top level modules:
+# 	mux32_1
+# End time: 15:08:49 on Jan 22,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:08:49 on Jan 22,2018
+# vlog -reportprogress 300 ./giantMux.sv 
+# -- Compiling module giantMux
+# 
+# Top level modules:
+# 	giantMux
+# End time: 15:08:49 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:08:49 on Jan 22,2018
+# vlog -reportprogress 300 ./decoder5_32.sv 
+# -- Compiling module decoder3_8
+# -- Compiling module decoder2_4
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# End time: 15:08:49 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:08:52 on Jan 22,2018, Elapsed time: 0:12:27
+# Errors: 0, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 15:08:52 on Jan 22,2018
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder2_4
+# Loading work.decoder3_8
+# Loading work.createReg
+# Loading work.D_FF64
+# Loading work.giantMux
+# Loading work.D_FF_Enabler
+# Loading work.mux2_1
+# Loading work.D_FF
+# Loading work.mux32_1
+# Loading work.mux16_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# ** Warning: (vsim-3015) ./createReg.sv(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'reset'. The port definition is at: ./D_FF.sv(35).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/regs/zeroes File: ./D_FF.sv
+# ** Warning: Design size of 12075 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# 7500.00 ns Writing pattern to all registers.
+# 317500.00 ns Checking pattern.
+# ** Note: $stop    : ./regfile.sv(98)
+#    Time: 477500 ns  Iteration: 1  Instance: /regstim
+# Break in Module regstim at ./regfile.sv line 98
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:24 on Jan 22,2018
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 19:00:24 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:24 on Jan 22,2018
+# vlog -reportprogress 300 ./createReg.sv 
+# -- Compiling module createReg
+# 
+# Top level modules:
+# 	createReg
+# End time: 19:00:24 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:24 on Jan 22,2018
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# -- Compiling module D_FF_Enabler
+# -- Compiling module D_FF64
+# 
+# Top level modules:
+# 	D_FF64
+# End time: 19:00:24 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:24 on Jan 22,2018
+# vlog -reportprogress 300 ./mux2_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux16_1
+# -- Compiling module mux32_1
+# 
+# Top level modules:
+# 	mux32_1
+# End time: 19:00:24 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:24 on Jan 22,2018
+# vlog -reportprogress 300 ./giantMux.sv 
+# -- Compiling module giantMux
+# 
+# Top level modules:
+# 	giantMux
+# End time: 19:00:24 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:24 on Jan 22,2018
+# vlog -reportprogress 300 ./decoder5_32.sv 
+# -- Compiling module decoder3_8
+# -- Compiling module decoder2_4
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# End time: 19:00:24 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:00:25 on Jan 22,2018, Elapsed time: 3:51:33
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 19:00:25 on Jan 22,2018
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder2_4
+# Loading work.decoder3_8
+# Loading work.createReg
+# Loading work.D_FF64
+# Loading work.giantMux
+# Loading work.D_FF_Enabler
+# Loading work.mux2_1
+# Loading work.D_FF
+# Loading work.mux32_1
+# Loading work.mux16_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# ** Warning: (vsim-3015) ./createReg.sv(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'reset'. The port definition is at: ./D_FF.sv(35).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/regs/zeroes File: ./D_FF.sv
+# ** Warning: Design size of 12075 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# 7500.00 ns Writing pattern to all registers.
+# 317500.00 ns Checking pattern.
+# ** Note: $stop    : ./regfile.sv(98)
+#    Time: 477500 ns  Iteration: 1  Instance: /regstim
+# Break in Module regstim at ./regfile.sv line 98
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:16:10 on Jan 22,2018
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 19:16:10 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:16:10 on Jan 22,2018
+# vlog -reportprogress 300 ./createReg.sv 
+# -- Compiling module createReg
+# 
+# Top level modules:
+# 	createReg
+# End time: 19:16:10 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:16:10 on Jan 22,2018
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# -- Compiling module D_FF_Enabler
+# -- Compiling module D_FF64
+# 
+# Top level modules:
+# 	D_FF64
+# End time: 19:16:10 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:16:10 on Jan 22,2018
+# vlog -reportprogress 300 ./mux2_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux16_1
+# -- Compiling module mux32_1
+# 
+# Top level modules:
+# 	mux32_1
+# End time: 19:16:10 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:16:10 on Jan 22,2018
+# vlog -reportprogress 300 ./giantMux.sv 
+# -- Compiling module giantMux
+# 
+# Top level modules:
+# 	giantMux
+# End time: 19:16:10 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:16:10 on Jan 22,2018
+# vlog -reportprogress 300 ./decoder5_32.sv 
+# -- Compiling module decoder3_8
+# -- Compiling module decoder2_4
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# End time: 19:16:10 on Jan 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:16:11 on Jan 22,2018, Elapsed time: 0:15:46
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 19:16:11 on Jan 22,2018
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder2_4
+# Loading work.decoder3_8
+# Loading work.createReg
+# Loading work.D_FF64
+# Loading work.giantMux
+# Loading work.D_FF_Enabler
+# Loading work.mux2_1
+# Loading work.D_FF
+# Loading work.mux32_1
+# Loading work.mux16_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# ** Warning: (vsim-3015) ./createReg.sv(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'reset'. The port definition is at: ./D_FF.sv(35).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/regs/zeroes File: ./D_FF.sv
+# ** Warning: Design size of 12075 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# 7500.00 ns Writing pattern to all registers.
+# 317500.00 ns Checking pattern.
+# ** Note: $stop    : ./regfile.sv(98)
+#    Time: 477500 ns  Iteration: 1  Instance: /regstim
+# Break in Module regstim at ./regfile.sv line 98

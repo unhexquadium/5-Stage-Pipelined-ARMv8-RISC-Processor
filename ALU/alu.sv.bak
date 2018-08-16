@@ -1,0 +1,18 @@
+module alu (A, B, cntrl, result, negative, zero, overflow, carry_out);
+
+	output logic [63:0] result;
+	output logic negative, zero, overflow, carry_out;
+	input logic [63:0] A, B;
+	input logic [2:0] cntrl;
+	
+	
+	// cntrl			Operation						Notes:
+// 000:			result = B						value of overflow and carry_out unimportant
+// 010:			result = A + B
+// 011:			result = A - B
+// 100:			result = bitwise A & B		value of overflow and carry_out unimportant
+// 101:			result = bitwise A | B		value of overflow and carry_out unimportant
+// 110:			result = bitwise A XOR B	value of overflow and carry_out unimportant
+
+
+endmodule

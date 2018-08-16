@@ -1,0 +1,16 @@
+module giantMux(out, in, reset, clk);
+
+	output logic  [63:0]  out;
+	input  logic  [63:0][31:0]  in;
+	input  logic          clk,reset;
+  
+	genvar i;
+  
+	generate
+		for(i=0; i<64; i++) begin : muxing
+			mux32_1 mmmm(out[i],in[i][31:0],s[4:0]);
+		end
+	endgenerate
+
+endmodule
+	

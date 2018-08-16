@@ -1,0 +1,18 @@
+module decoder5_32 (addr, chosen, reset, clk);
+
+	output logic  [31:0]  chosen;
+	input  logic  [4:0] 	 addr;
+	input  logic          clk,reset;
+	logic 					 out1
+  
+	genvar i;
+  
+	generate
+		for(i=0; i<32; i++) begin : decoding
+			and a1 (out1, addr[0], addr[1], addr[2], addr[3]);
+			and a2 (chosen[i], out1, addr[4]);
+		end
+	endgenerate
+
+endmodule
+	

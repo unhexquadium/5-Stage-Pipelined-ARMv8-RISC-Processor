@@ -1,0 +1,49 @@
+module adder_1bit(x,y,cin,z,cout);
+
+	output logic z, cout;
+	input logic x,y,cin;
+	
+	assign z = (x^y^cin) | (x&y&cin);
+	assign cout = (x&(cin|y)) | (cin&y);
+
+endmodule 
+
+module adder_64bit (A,B,cin,Z,carry_out, overflow, zero, negative);
+
+	output logic [63:0] Z;
+	output logic carry_out, overflow, zero, negative;
+	input logic [63:0] A, B;
+	input logic cin;
+	logic [63:0] cout;
+	
+	adder_1bit a(A[0], B[0], cin, Z[0], cout[0]);
+	
+	genvar i;
+	
+	generate
+		
+		for (i = 1; i<64; i++) begin: adding
+			adder_1bit b(A[i], B[i], cout[i-1], Z[i], cout[i]);
+		end
+		
+	endgenerate
+	
+	assign carry_out = cout[63];
+	assign overflow = carry_out[62] ^ carry_out[63];
+	assign zero = ~Z & 64'b1;
+	assign negative = Z[63] & 1;
+	
+endmodule 
+
+
+module subtracter_64bit (A,B,Z,carry_out,overflow,zero,negative);
+	
+	output logic [63:0] Z;
+	output logic carry_out, overflow, zero, negative;
+	input logic [63:0] A, B;
+
+	//to subtract A-B, Do A + (-B) by doing A+ ~B and setting Cin = 1	
+	adder_64bit subtract (A, ~B, 64'd1, Z, carry_out, overflow, zero, negative);
+	
+	
+endmodule 

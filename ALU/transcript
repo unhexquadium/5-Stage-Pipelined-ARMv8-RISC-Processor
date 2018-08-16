@@ -1,0 +1,735 @@
+# Reading E:/Engr/quartus/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:15:47 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:15:47 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:15:47 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:15:47 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:15:47 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:15:47 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:15:47 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ./runlab.do line 19
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+add wave -position end  sim:/alustim/A
+add wave -position end  sim:/alustim/B
+add wave -position end  sim:/alustim/cntrl
+add wave -position end  sim:/alustim/result
+add wave -position end  sim:/alustim/negative
+add wave -position end  sim:/alustim/zero
+add wave -position end  sim:/alustim/overflow
+add wave -position end  sim:/alustim/carry_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/Engr/quartus/469Labs/Final Lab 2/wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:16:17 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:16:17 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:16:17 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:16:18 on Jan 31,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:16:18 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:16:18 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:16:18 on Jan 31,2018, Elapsed time: 0:00:31
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:16:18 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# 500000.00 ns testing addition
+# 600000.00 ns testing subtraction
+# 700000.00 ns testing AND gate
+# 800000.00 ns testing OR gate
+# 900000.00 ns testing XOR gate
+# 1000000.00 ns testing addition
+# 1100000.00 ns testing subtraction
+# 1200000.00 ns testing subtraction
+# 1300000.00 ns testing addition
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/Engr/quartus/469Labs/Final Lab 2/wave.do}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/Engr/quartus/469Labs/Final Lab 2/wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:16 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:17:16 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:16 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:17:16 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:16 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:17:16 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:17:17 on Jan 31,2018, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:17:17 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# 500000.00 ns testing addition
+# 600000.00 ns testing subtraction
+# 700000.00 ns testing AND gate
+# 800000.00 ns testing OR gate
+# 900000.00 ns testing XOR gate
+# 1000000.00 ns testing addition
+# 1100000.00 ns testing subtraction
+# 1200000.00 ns testing subtraction
+# 1300000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 1400 us  Scope: alustim File: ./alu.sv Line: 121
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:18:29 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:18:29 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:18:29 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:18:29 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:18:29 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:18:29 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:18:29 on Jan 31,2018, Elapsed time: 0:01:12
+# Errors: 1, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:18:30 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# ** Error: Assertion error.
+#    Time: 100 us  Scope: alustim File: ./alu.sv Line: 64
+# ** Error: Assertion error.
+#    Time: 200 us  Scope: alustim File: ./alu.sv Line: 64
+# ** Error: Assertion error.
+#    Time: 300 us  Scope: alustim File: ./alu.sv Line: 64
+# ** Error: Assertion error.
+#    Time: 400 us  Scope: alustim File: ./alu.sv Line: 64
+# ** Error: Assertion error.
+#    Time: 500 us  Scope: alustim File: ./alu.sv Line: 64
+# 500000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 600 us  Scope: alustim File: ./alu.sv Line: 71
+# 600000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 700 us  Scope: alustim File: ./alu.sv Line: 77
+# 700000.00 ns testing AND gate
+# ** Error: Assertion error.
+#    Time: 800 us  Scope: alustim File: ./alu.sv Line: 83
+# 800000.00 ns testing OR gate
+# ** Error: Assertion error.
+#    Time: 900 us  Scope: alustim File: ./alu.sv Line: 89
+# 900000.00 ns testing XOR gate
+# ** Error: Assertion error.
+#    Time: 1 ms  Scope: alustim File: ./alu.sv Line: 95
+# 1000000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 1100 us  Scope: alustim File: ./alu.sv Line: 103
+# 1100000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 1200 us  Scope: alustim File: ./alu.sv Line: 109
+# 1200000.00 ns testing subtraction
+# 1300000.00 ns testing addition
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:45:57 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:45:57 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:45:57 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:45:58 on Jan 31,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:45:58 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:45:58 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:45:58 on Jan 31,2018, Elapsed time: 0:27:28
+# Errors: 12, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:45:58 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# ** Error: Assertion error.
+#    Time: 100 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 200 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 300 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 400 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 500 us  Scope: alustim File: ./alu.sv Line: 74
+# 500000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 600 us  Scope: alustim File: ./alu.sv Line: 81
+# 600000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 700 us  Scope: alustim File: ./alu.sv Line: 87
+# 700000.00 ns testing AND gate
+# ** Error: Assertion error.
+#    Time: 800 us  Scope: alustim File: ./alu.sv Line: 93
+# 800000.00 ns testing OR gate
+# ** Error: Assertion error.
+#    Time: 900 us  Scope: alustim File: ./alu.sv Line: 99
+# 900000.00 ns testing XOR gate
+# ** Error: Assertion error.
+#    Time: 1 ms  Scope: alustim File: ./alu.sv Line: 105
+# 1000000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 1100 us  Scope: alustim File: ./alu.sv Line: 113
+# 1100000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 1200 us  Scope: alustim File: ./alu.sv Line: 119
+# 1200000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 1300 us  Scope: alustim File: ./alu.sv Line: 125
+# 1300000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 1400 us  Scope: alustim File: ./alu.sv Line: 131
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {E:/Engr/quartus/469Labs/Final Lab 2/wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:33 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:46:33 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:33 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:46:33 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:33 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:46:33 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:46:34 on Jan 31,2018, Elapsed time: 0:00:36
+# Errors: 14, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:46:34 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# ** Error: Assertion error.
+#    Time: 100 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 200 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 300 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 400 us  Scope: alustim File: ./alu.sv Line: 74
+# ** Error: Assertion error.
+#    Time: 500 us  Scope: alustim File: ./alu.sv Line: 74
+# 500000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 600 us  Scope: alustim File: ./alu.sv Line: 81
+# 600000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 700 us  Scope: alustim File: ./alu.sv Line: 87
+# 700000.00 ns testing AND gate
+# ** Error: Assertion error.
+#    Time: 800 us  Scope: alustim File: ./alu.sv Line: 93
+# 800000.00 ns testing OR gate
+# ** Error: Assertion error.
+#    Time: 900 us  Scope: alustim File: ./alu.sv Line: 99
+# 900000.00 ns testing XOR gate
+# ** Error: Assertion error.
+#    Time: 1 ms  Scope: alustim File: ./alu.sv Line: 105
+# 1000000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 1100 us  Scope: alustim File: ./alu.sv Line: 113
+# 1100000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 1200 us  Scope: alustim File: ./alu.sv Line: 119
+# 1200000.00 ns testing subtraction
+# ** Error: Assertion error.
+#    Time: 1300 us  Scope: alustim File: ./alu.sv Line: 125
+# 1300000.00 ns testing addition
+# ** Error: Assertion error.
+#    Time: 1400 us  Scope: alustim File: ./alu.sv Line: 131
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:50:01 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:50:01 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:50:01 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:50:01 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:50:01 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:50:01 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:50:01 on Jan 31,2018, Elapsed time: 0:03:27
+# Errors: 14, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:50:01 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# 500000.00 ns testing addition
+# 600000.00 ns testing subtraction
+# 700000.00 ns testing AND gate
+# 800000.00 ns testing OR gate
+# 900000.00 ns testing XOR gate
+# 1000000.00 ns testing addition
+# 1100000.00 ns testing subtraction
+# 1200000.00 ns testing subtraction
+# 1300000.00 ns testing addition
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:51:42 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 22:51:42 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:51:42 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 22:51:42 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:51:42 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 22:51:42 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:51:43 on Jan 31,2018, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 22:51:43 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# 500000.00 ns testing addition
+# 600000.00 ns testing subtraction
+# 700000.00 ns testing AND gate
+# 800000.00 ns testing OR gate
+# 900000.00 ns testing XOR gate
+# 1000000.00 ns testing addition
+# 1100000.00 ns testing subtraction
+# 1200000.00 ns testing subtraction
+# 1300000.00 ns testing addition
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:23 on Jan 31,2018
+# vlog -reportprogress 300 ./alu.sv 
+# -- Compiling module alu
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 23:06:23 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:23 on Jan 31,2018
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# -- Compiling module adder_64bit
+# -- Compiling module subtracter_64bit
+# -- Compiling module adder_64bit_testbench
+# -- Compiling module subtracter_64bit_testbench
+# 
+# Top level modules:
+# 	adder_64bit_testbench
+# 	subtracter_64bit_testbench
+# End time: 23:06:23 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:23 on Jan 31,2018
+# vlog -reportprogress 300 ./mux8x64_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux4_1
+# -- Compiling module mux8_1
+# -- Compiling module mux8x64_1
+# -- Compiling module mux8x64_1_testbench
+# -- Compiling module mux8_1_testbench
+# -- Compiling module mux2_1_testbench
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux8x64_1_testbench
+# 	mux8_1_testbench
+# 	mux2_1_testbench
+# 	mux4_1_testbench
+# End time: 23:06:23 on Jan 31,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:06:24 on Jan 31,2018, Elapsed time: 0:14:41
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 23:06:24 on Jan 31,2018
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adder_64bit
+# Loading work.adder
+# Loading work.subtracter_64bit
+# Loading work.mux8x64_1
+# Loading work.mux2_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+# 500000.00 ns testing addition
+# 600000.00 ns testing subtraction
+# 700000.00 ns testing AND gate
+# 800000.00 ns testing OR gate
+# 900000.00 ns testing XOR gate
+# 1000000.00 ns testing addition
+# 1100000.00 ns testing subtraction
+# 1200000.00 ns testing subtraction
+# 1300000.00 ns testing addition
+# End time: 23:24:53 on Jan 31,2018, Elapsed time: 0:18:29
+# Errors: 0, Warnings: 0

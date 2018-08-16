@@ -1,0 +1,17 @@
+module regfile (ReadData1, ReadData2, WriteData, ReadRegister1, ReadRegister2, WriteRegister, RegWrite, clk);
+	
+	input logic [4:0] ReadRegister1, ReadRegister2, WriteRegister;
+	input logic [63:0] WriteData;
+	input logic RegWrite, clk;
+	output logic [63:0] ReadData1, ReadData2;
+	
+	//create a module for each 64-bit register consisting of 64 D-flipflops
+	//This module takes input of regWrite and WriteData and outputs a wire of readData
+	
+	//create a module for 32 rows of these registers. NO? maybe use a for loop to create 32 of these register rows.
+	
+	//create a module for one multiplexer. 
+	
+	
+	
+endmodule 

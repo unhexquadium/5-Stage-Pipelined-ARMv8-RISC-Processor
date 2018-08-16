@@ -1,0 +1,55 @@
+module D_FF (q, d, reset, clk);
+
+  output reg q;
+  input d, 
+  input reset, clk;
+
+  always_ff @(posedge clk)
+  if (reset)
+    q <= 0;  // On reset, set to 0.
+  else
+    q <= d; // Otherwise out = d
+	 
+endmodule
+
+
+module D_FF4(q, d, clk);
+
+  output logic  [3:0]  q;
+  input  logic  [3:0]  d;
+  input  logic         clk;
+
+  D_FF d0(.q(q[0]), .d(d[0]), .clk);
+  D_FF d1(.q(q[1]), .d(d[1]), .clk);
+  D_FF d2(.q(q[2]), .d(d[2]), .clk);
+  D_FF d3(.q(q[3]), .d(d[3]), .clk);
+  
+endmodule
+
+
+module D_FF16(q, d, clk);
+
+  output logic  [15:0]  q;
+  input  logic  [15:0]  d;
+  input  logic          clk;
+
+  D_FF4 d0( .q(q[3:0]),   .d(d[3:0]),  .clk);
+  D_FF4 d1( .q(q[7:4]),   .d(d[7:4]),  .clk);
+  D_FF4 d2(.q(q[11:8]),  .d(d[11:8]),  .clk);
+  D_FF4 d3(.q(q[15:12]), .d(d[15:12]), .clk);
+  
+endmodule 
+
+
+module D_FF64(q, d, clk);
+
+  output logic  [63:0]  q;
+  input  logic  [63:0]  d;
+  input  logic          clk;
+
+  D_FF16 d16( .q(q[15:0]),   .d(d[15:0]),  .clk);
+  D_FF16 d32( .q(q[31:16]),   .d(d[31:16]),  .clk);
+  D_FF16 d48(.q(q[47:32]),  .d(d[47:32]),  .clk);
+  D_FF16 d64(.q(q[63:48]), .d(d[63:48]), .clk);
+  
+endmodule 

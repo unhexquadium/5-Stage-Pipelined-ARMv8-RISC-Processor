@@ -1,0 +1,19 @@
+module setflag(clk, e, aluflag, flag);
+
+	//call this four times. Once for each flag.
+	
+	output logic flag;
+	input logic aluflag, e, clk;
+	logic choice;
+	
+	//if e=0, flag <= flag. If e=1,  flag <= aluflag.
+	mux2_1 flagmux (choice, flag, aluflag, e);
+	
+	always_ff @(posedge clk) begin
+		if (reset)
+			flag <= 0;
+		else
+			flag <= choice;
+	end
+
+endmodule 

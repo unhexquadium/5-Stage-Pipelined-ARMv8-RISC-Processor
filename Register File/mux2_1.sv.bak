@@ -1,0 +1,13 @@
+module mux2_1(out, i0, i1, sel);	
+
+	output logic out; 	
+	input  logic i0, i1, sel; 	
+	logic out1, notsel, out3;
+		
+	and firstand (out1, i1, sel); 
+	not notgate (notsel, sel); 
+	and secondand (out2, i0, notsel); 
+	
+	or outmux (out, out1, out2);  
+	
+endmodule

@@ -1,0 +1,98 @@
+`timescale 1ns/10ps
+//a 2:1 mux made from basic gates
+module mux2_1(out, i0, i1, sel);	
+
+	output logic out; 	
+	input  logic i0, i1, sel; 	
+	logic out1,out2, notsel;
+		
+	//the gates form the equation out = i1*sel + i0*(~sel)
+	and #50 firstand (out1, i1, sel); 
+	not #50 notgate (notsel, sel); 
+	and #50 secondand (out2, i0, notsel); 
+	
+	or #50 outmux (out, out1, out2);  
+	
+endmodule
+
+
+//the following is a hierarchy of 2:1 muxes to create a 32:1 mux, each uses a pattern of calling the previous size mux twice to grow the inputs and 
+//choosing between the now two outputs with another 2:1 mux
+module mux4_1(out,i,s);
+	output logic	out;
+	input logic	[3:0]	i;
+	input logic	[1:0] s;
+	logic 				mux1,mux2;
+	
+	mux2_1 m1 (mux1,i[0],i[1],s[0]);
+	mux2_1 m2 (mux2,i[2],i[3],s[0]);
+	mux2_1 m3 (out,mux1,mux2,s[1]);
+	
+endmodule 
+
+module mux8_1(out,i,s);
+	output logic	out;
+	input logic	[7:0] i;
+	input logic [2:0] s;
+	logic 				mux1,mux2;
+	
+	mux4_1 m1 (mux1,i[3:0],s[1:0]);
+	mux4_1 m2 (mux2,i[7:4],s[1:0]);
+	mux2_1 m3 (out, mux1,mux2,s[2]);
+endmodule
+
+
+module mux8x64_1(a,b,c,d,e,f,cntrl,out);
+	
+	output logic [63:0] out;
+	input logic [63:0] a,b,c,d,e,f;
+	input logic [2:0] cntrl;
+	
+	genvar i;
+	
+	generate
+	
+		for (i=0; i<64; i++) begin: choosing
+			mux8_1 bestmux (out[i], {a[i],1'b0,b[i],c[i],d[i],e[i],f[i],1'b0}, cntrl);
+		end
+	
+	endgenerate
+
+endmodule 
+
+module mux8x64_1_testbench();
+
+	logic [63:0] out;
+	logic [63:0] a,b,c,d,e,f;
+	logic [2:0] cntrl;
+	logic clk;
+	
+	mux8x64_1 dut(a,b,c,d,e,f,cntrl,out);
+	
+	//Set up the clock
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+	
+	
+	//Test many cycles for a sample of output values
+	initial begin	
+	a <= $random();
+	b <= $random();
+	c <= $random();
+	d <= $random();
+	e <= $random();
+	f <= $random();	cntrl <= 3'b0; @(posedge clk);
+							cntrl <= 3'b010; @(posedge clk);
+							cntrl <= 3'b011; @(posedge clk);
+							cntrl <= 3'b100; @(posedge clk);
+							cntrl <= 3'b101; @(posedge clk);
+							cntrl <= 3'b110; @(posedge clk);
+
+
+		$stop;
+	end
+	
+endmodule 

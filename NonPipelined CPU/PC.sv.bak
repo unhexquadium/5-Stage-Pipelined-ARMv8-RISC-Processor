@@ -1,0 +1,15 @@
+module programcounter (clk, reset, counter, );
+
+	output logic [63:0] counter = 0;
+	input logic clk, reset;
+	logic [32:0] smallcounter = 0;
+	
+	
+	always_comb @(posedge clk) begin
+		smallcounter += 4;
+	end
+	
+	
+	assign counter = {smallcounter, 32'b0};
+
+endmodule 

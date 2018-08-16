@@ -1,0 +1,24 @@
+module signextend #(SIZE) (Imm64, Imm,);
+
+	output logic [63:0] Imm64;
+	input logic [SIZE-1:0] Imm;
+	logic extension;
+	
+	assign extension = 64 - SIZE;
+	assign Imm64 = {extension{Imm[SIZE-1]},Imm};
+	
+	
+endmodule 
+
+
+
+//(Imm64, Imm19, Imm26, whichImm);
+//
+//	output logic [63:0] Imm64;
+//	input logic [18:0] Imm19;
+//	input logic [25:0] Imm26;
+//	input logic whichImm;
+//	
+//	
+//
+//endmodule 
